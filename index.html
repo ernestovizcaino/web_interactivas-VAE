@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Best Buy, tienda de productos electrónicos.">
+  <title>Best Buy - Tecnología que te mueve</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="promo"><i data-lucide="zap"></i> ENVÍO GRATIS EN COMPRAS MAYORES A $999 - SOLO POR HOY</div>
+
+  <header class="header">
+    <div class="header-main container">
+      <button class="icon-button mobile-only" aria-label="Abrir menú"><i data-lucide="menu"></i></button>
+    <a class="logo" href="#">BestBuy</a>
+      <form class="search">
+        <input type="search" placeholder="¿Qué estás buscando hoy?" aria-label="Buscar productos">
+        <button type="button">Buscar</button>
+      </form>
+      <div class="account"><span><i data-lucide="user"></i></span><p><small>Hola, inicia sesión</small>Mi cuenta</p></div>
+      <button class="icon-button" aria-label="Carrito"><i data-lucide="shopping-cart"></i><b>0</b></button>
+    </div>
+    <nav class="nav container">
+      <a href="#categorias"><i data-lucide="menu"></i> &nbsp; Todos los productos</a>
+      <a href="#ofertas">Ofertas</a>
+      <a href="#categorias">Categorías</a>
+      <a href="#productos">Novedades</a>
+      <a class="sale" href="#productos"><i data-lucide="flame"></i> Liquidación</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="ofertas">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="tag">OFERTA RELÁMPAGO</span>
+          <h1>Tecnología que te mueve.</h1>
+          <p>Estrena lo último en tecnología con precios que sí emocionan. Compra fácil, recibe rápido y disfruta desde hoy.</p>
+          <div class="hero-actions"><a class="button yellow" href="#productos">Ver ofertas →</a><a class="button outline" href="#categorias">Explorar categorías</a></div>
+          <div class="benefits"><span><i data-lucide="check"></i> Envío rápido</span><span><i data-lucide="check"></i> Compra segura</span><span><i data-lucide="check"></i> Garantía oficial</span></div>
+        </div>
+        <div class="hero-visual">
+          <div class="image-card"><img src="https://images.unsplash.com/photo-1550009158-9ebf69173e03?auto=format&fit=crop&w=1200&q=90" alt="Productos electrónicos"><div class="discount"><small>HASTA</small><strong>35% OFF</strong></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="categorias">
+      <div class="section-heading"><div><span>ENCUENTRA LO TUYO</span><h2>Compra por categoría</h2></div><a href="#productos">Ver todas →</a></div>
+      <div class="categories">
+        <article><i data-lucide="laptop"></i><b>Laptops</b><small>126 productos</small></article>
+        <article><i data-lucide="smartphone"></i><b>Smartphones</b><small>94 productos</small></article>
+        <article><i data-lucide="tv"></i><b>TV & Video</b><small>73 productos</small></article>
+        <article><i data-lucide="headphones"></i><b>Audio</b><small>112 productos</small></article>
+        <article><i data-lucide="gamepad-2"></i><b>Gaming</b><small>88 productos</small></article>
+        <article><i data-lucide="home"></i><b>Hogar inteligente</b><small>67 productos</small></article>
+      </div>
+    </section>
+
+    <section class="section products-section" id="productos">
+      <div class="container">
+        <div class="section-heading"><div><span class="red">PRECIOS INCREÍBLES</span><h2>Ofertas destacadas</h2></div><div class="timer">Terminan en 08 : 42 : 17</div></div>
+        <div class="products">
+          <article class="product-card"><em>-17%</em><button aria-label="Guardar"><i data-lucide="heart"></i></button><img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=900&q=85" alt="Laptop"><small>COMPUTACIÓN</small><h3>Laptop ZenBook Air 14&quot;</h3><p class="rating">★★★★★ <span>4.9 (128)</span></p><p class="price">$18,999 <del>$22,999</del></p><span class="fake-button">Agregar al carrito</span></article>
+          <article class="product-card"><em class="yellow-badge">MÁS VENDIDO</em><button aria-label="Guardar"><i data-lucide="heart"></i></button><img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=85" alt="Audífonos"><small>AUDIO</small><h3>Audífonos Pulse ANC</h3><p class="rating">★★★★★ <span>4.8 (86)</span></p><p class="price">$2,499 <del>$3,299</del></p><span class="fake-button">Agregar al carrito</span></article>
+          <article class="product-card"><em>-15%</em><button aria-label="Guardar"><i data-lucide="heart"></i></button><img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=900&q=85" alt="Smartphone"><small>TELEFONÍA</small><h3>Smartphone Nova Pro 5G</h3><p class="rating">★★★★★ <span>4.7 (214)</span></p><p class="price">$13,499 <del>$15,999</del></p><span class="fake-button">Agregar al carrito</span></article>
+          <article class="product-card"><em>OFERTA</em><button aria-label="Guardar"><i data-lucide="heart"></i></button><img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?auto=format&fit=crop&w=900&q=85" alt="Smart TV"><small>TV & VIDEO</small><h3>Smart TV Vision QLED 55&quot;</h3><p class="rating">★★★★★ <span>4.9 (72)</span></p><p class="price">$11,999 <del>$14,999</del></p><span class="fake-button">Agregar al carrito</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reviews" id="resenas">
+      <div class="container"><div class="reviews-heading"><span>CLIENTES FELICES</span><h2>La opinión que más importa</h2></div><div class="review-grid">
+        <figure><div>★★★★★</div><blockquote>“Llegó antes de lo esperado y perfectamente empacado. El precio fue el mejor que encontré.”</blockquote><figcaption><b>Mariana R.</b><small>Compra verificada · Laptop</small></figcaption></figure>
+        <figure><div>★★★★★</div><blockquote>“El soporte me ayudó a elegir la TV correcta. Súper fácil comprar y pagar a meses.”</blockquote><figcaption><b>Carlos M.</b><small>Compra verificada · Smart TV</small></figcaption></figure>
+        <figure><div>★★★★★</div><blockquote>“Mis audífonos suenan increíble. Definitivamente volveré a comprar en BestBuy.”</blockquote><figcaption><b>Sofía G.</b><small>Compra verificada · Audio</small></figcaption></figure>
+      </div></div>
+    </section>
+
+  </main>
+
+  <footer><div class="container footer-grid"><div><a class="logo" href="#">BestBuy</a><p>La tecnología que quieres, al precio que esperabas.</p></div><div><b>Compra</b><a href="#productos">Ofertas</a><a href="#productos">Computación</a><a href="#productos">Telefonía</a></div><div><b>Ayuda</b><a href="#">Rastrear pedido</a><a href="#">Devoluciones</a><a href="#">Contacto</a></div><div><b>Conócenos</b><a href="#">Nosotros</a><a href="#">Sucursales</a><a href="#">Trabaja aquí</a></div></div><div class="container copyright">2026 BestBuy. Todos los derechos reservados. <span>Privacidad - Términos - Accesibilidad</span></div></footer>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>lucide.createIcons();</script>
+</body>
+</html>
