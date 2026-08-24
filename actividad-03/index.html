@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Best Buy, tienda de productos electrónicos.">
+  <title>Best Buy - Tecnología que te mueve</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg-bb-yellow text-center py-2 fw-bold small">
+    <i class="bi bi-lightning-fill"></i> ENVÍO GRATIS EN COMPRAS MAYORES A $999 - SOLO POR HOY
+  </div>
+
+  <header class="bg-bb text-white sticky-top">
+    <div class="container">
+      <div class="d-flex align-items-center gap-3 py-3 flex-wrap flex-lg-nowrap">
+        <button class="btn btn-outline-light d-lg-none flex-shrink-0" type="button" data-bs-toggle="collapse" data-bs-target="#mobileNav" aria-controls="mobileNav" aria-expanded="false" aria-label="Abrir menú">
+          <i class="bi bi-list fs-5"></i>
+        </button>
+
+        <a class="navbar-brand text-white fw-bold fs-3 text-decoration-none flex-shrink-0 mb-0" href="#">BestBuy</a>
+
+        <form class="flex-grow-1 order-3 order-lg-0 w-100 flex-lg-grow-1" role="search" style="min-width: 0;">
+          <div class="input-group">
+            <input class="form-control" type="search" placeholder="¿Qué estás buscando hoy?" aria-label="Buscar productos">
+            <button class="btn btn-bb-yellow" type="button">Buscar</button>
+          </div>
+        </form>
+
+        <div class="d-none d-lg-flex align-items-center flex-shrink-0">
+          <i class="bi bi-person fs-4 me-2"></i>
+          <p class="mb-0 lh-sm">
+            <small class="d-block text-white-50">Hola, inicia sesión</small>
+            <strong>Mi cuenta</strong>
+          </p>
+        </div>
+
+        <button class="btn btn-outline-light position-relative flex-shrink-0 ms-auto ms-lg-0" type="button" aria-label="Carrito">
+          <i class="bi bi-cart"></i>
+          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-bb">0</span>
+        </button>
+      </div>
+
+      <nav class="d-none d-lg-flex gap-4 pb-3">
+        <a class="text-white text-decoration-none fw-bold" href="#categorias"><i class="bi bi-list"></i> Todos los productos</a>
+        <a class="text-white text-decoration-none" href="#ofertas">Ofertas</a>
+        <a class="text-white text-decoration-none" href="#categorias">Categorías</a>
+        <a class="text-white text-decoration-none" href="#productos">Novedades</a>
+        <a class="text-bb-yellow text-decoration-none fw-semibold" href="#productos"><i class="bi bi-fire"></i> Liquidación</a>
+      </nav>
+
+      <div class="collapse d-lg-none pb-3" id="mobileNav">
+        <nav class="d-flex flex-column gap-2">
+          <a class="text-white text-decoration-none fw-bold" href="#categorias"><i class="bi bi-list"></i> Todos los productos</a>
+          <a class="text-white text-decoration-none" href="#ofertas">Ofertas</a>
+          <a class="text-white text-decoration-none" href="#categorias">Categorías</a>
+          <a class="text-white text-decoration-none" href="#productos">Novedades</a>
+          <a class="text-bb-yellow text-decoration-none fw-semibold" href="#productos"><i class="bi bi-fire"></i> Liquidación</a>
+          <a class="text-white text-decoration-none" href="#"><i class="bi bi-person"></i> Mi cuenta</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="bg-white py-5" id="ofertas">
+      <div class="container">
+        <div class="row align-items-center g-4 g-lg-5">
+          <div class="col-lg-6">
+            <span class="badge bg-bb-red mb-3">OFERTA RELÁMPAGO</span>
+            <h1 class="display-4 fw-bold mb-3">Tecnología que te mueve.</h1>
+            <p class="fs-5 text-secondary mb-4">Estrena lo último en tecnología con precios que sí emocionan. Compra fácil, recibe rápido y disfruta desde hoy.</p>
+            <div class="d-flex flex-wrap gap-2 mb-4">
+              <a class="btn btn-bb-yellow" href="#productos">Ver ofertas →</a>
+              <a class="btn btn-outline-bb" href="#categorias">Explorar categorías</a>
+            </div>
+            <div class="d-flex flex-wrap gap-3 text-secondary small">
+              <span><i class="bi bi-check-lg"></i> Envío rápido</span>
+              <span><i class="bi bi-check-lg"></i> Compra segura</span>
+              <span><i class="bi bi-check-lg"></i> Garantía oficial</span>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="position-relative">
+              <div class="ratio ratio-1x1">
+                <img class="object-fit-cover rounded" src="https://images.unsplash.com/photo-1550009158-9ebf69173e03?auto=format&fit=crop&w=1200&q=90" alt="Productos electrónicos">
+              </div>
+              <div class="badge bg-bb-red position-absolute top-0 start-0 m-3 p-2 text-center">
+                <small class="d-block">HASTA</small>
+                <strong class="fs-5">35% OFF</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5" id="categorias">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-end mb-4">
+          <div>
+            <span class="text-secondary fw-bold small">ENCUENTRA LO TUYO</span>
+            <h2 class="fw-bold mb-0">Compra por categoría</h2>
+          </div>
+          <a class="link-secondary text-decoration-none d-none d-sm-inline" href="#productos">Ver todas →</a>
+        </div>
+        <div class="row g-3">
+          <div class="col-6 col-md-4">
+            <article class="card h-100 text-center p-4">
+              <i class="bi bi-laptop fs-1 text-bb mb-2"></i>
+              <b>Laptops</b>
+              <small class="text-secondary">126 productos</small>
+            </article>
+          </div>
+          <div class="col-6 col-md-4">
+            <article class="card h-100 text-center p-4">
+              <i class="bi bi-phone fs-1 text-bb mb-2"></i>
+              <b>Smartphones</b>
+              <small class="text-secondary">94 productos</small>
+            </article>
+          </div>
+          <div class="col-6 col-md-4">
+            <article class="card h-100 text-center p-4">
+              <i class="bi bi-tv fs-1 text-bb mb-2"></i>
+              <b>TV &amp; Video</b>
+              <small class="text-secondary">73 productos</small>
+            </article>
+          </div>
+          <div class="col-6 col-md-4">
+            <article class="card h-100 text-center p-4">
+              <i class="bi bi-headphones fs-1 text-bb mb-2"></i>
+              <b>Audio</b>
+              <small class="text-secondary">112 productos</small>
+            </article>
+          </div>
+          <div class="col-6 col-md-4">
+            <article class="card h-100 text-center p-4">
+              <i class="bi bi-controller fs-1 text-bb mb-2"></i>
+              <b>Gaming</b>
+              <small class="text-secondary">88 productos</small>
+            </article>
+          </div>
+          <div class="col-6 col-md-4">
+            <article class="card h-100 text-center p-4">
+              <i class="bi bi-house fs-1 text-bb mb-2"></i>
+              <b>Hogar inteligente</b>
+              <small class="text-secondary">67 productos</small>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 bg-white" id="productos">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-end mb-4">
+          <div>
+            <span class="text-bb-red fw-bold small">PRECIOS INCREÍBLES</span>
+            <h2 class="fw-bold mb-0">Ofertas destacadas</h2>
+          </div>
+          <div class="badge text-bg-light border fs-6 fw-bold py-2 px-3 d-none d-sm-inline-block">Terminan en 08 : 42 : 17</div>
+        </div>
+        <div class="row g-4">
+          <div class="col-12 col-sm-6 col-lg-3">
+            <article class="card h-100 p-3 position-relative">
+              <span class="badge bg-bb-red position-absolute top-0 start-0 m-3 z-2">-17%</span>
+              <button class="btn btn-light rounded-circle position-absolute top-0 end-0 m-3 z-2" type="button" aria-label="Guardar"><i class="bi bi-heart"></i></button>
+              <div class="ratio ratio-1x1 mb-3">
+                <img class="object-fit-cover rounded" src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=900&q=85" alt="Laptop">
+              </div>
+              <small class="text-secondary fw-bold">COMPUTACIÓN</small>
+              <h3 class="h5 mt-2">Laptop ZenBook Air 14"</h3>
+              <p class="text-warning mb-1">★★★★★ <span class="text-secondary">4.9 (128)</span></p>
+              <p class="fw-bold fs-5 mb-3">$18,999 <del class="text-secondary fw-normal fs-6">$22,999</del></p>
+              <button class="btn btn-bb w-100 mt-auto" type="button">Agregar al carrito</button>
+            </article>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <article class="card h-100 p-3 position-relative">
+              <span class="badge bg-bb-yellow text-bb position-absolute top-0 start-0 m-3 z-2">MÁS VENDIDO</span>
+              <button class="btn btn-light rounded-circle position-absolute top-0 end-0 m-3 z-2" type="button" aria-label="Guardar"><i class="bi bi-heart"></i></button>
+              <div class="ratio ratio-1x1 mb-3">
+                <img class="object-fit-cover rounded" src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=85" alt="Audífonos">
+              </div>
+              <small class="text-secondary fw-bold">AUDIO</small>
+              <h3 class="h5 mt-2">Audífonos Pulse ANC</h3>
+              <p class="text-warning mb-1">★★★★★ <span class="text-secondary">4.8 (86)</span></p>
+              <p class="fw-bold fs-5 mb-3">$2,499 <del class="text-secondary fw-normal fs-6">$3,299</del></p>
+              <button class="btn btn-bb w-100 mt-auto" type="button">Agregar al carrito</button>
+            </article>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <article class="card h-100 p-3 position-relative">
+              <span class="badge bg-bb-red position-absolute top-0 start-0 m-3 z-2">-15%</span>
+              <button class="btn btn-light rounded-circle position-absolute top-0 end-0 m-3 z-2" type="button" aria-label="Guardar"><i class="bi bi-heart"></i></button>
+              <div class="ratio ratio-1x1 mb-3">
+                <img class="object-fit-cover rounded" src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=900&q=85" alt="Smartphone">
+              </div>
+              <small class="text-secondary fw-bold">TELEFONÍA</small>
+              <h3 class="h5 mt-2">Smartphone Nova Pro 5G</h3>
+              <p class="text-warning mb-1">★★★★★ <span class="text-secondary">4.7 (214)</span></p>
+              <p class="fw-bold fs-5 mb-3">$13,499 <del class="text-secondary fw-normal fs-6">$15,999</del></p>
+              <button class="btn btn-bb w-100 mt-auto" type="button">Agregar al carrito</button>
+            </article>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <article class="card h-100 p-3 position-relative">
+              <span class="badge bg-bb-red position-absolute top-0 start-0 m-3 z-2">OFERTA</span>
+              <button class="btn btn-light rounded-circle position-absolute top-0 end-0 m-3 z-2" type="button" aria-label="Guardar"><i class="bi bi-heart"></i></button>
+              <div class="ratio ratio-1x1 mb-3">
+                <img class="object-fit-cover rounded" src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?auto=format&fit=crop&w=900&q=85" alt="Smart TV">
+              </div>
+              <small class="text-secondary fw-bold">TV &amp; VIDEO</small>
+              <h3 class="h5 mt-2">Smart TV Vision QLED 55"</h3>
+              <p class="text-warning mb-1">★★★★★ <span class="text-secondary">4.9 (72)</span></p>
+              <p class="fw-bold fs-5 mb-3">$11,999 <del class="text-secondary fw-normal fs-6">$14,999</del></p>
+              <button class="btn btn-bb w-100 mt-auto" type="button">Agregar al carrito</button>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 bg-white" id="resenas">
+      <div class="container">
+        <span class="text-secondary fw-bold small">CLIENTES FELICES</span>
+        <h2 class="fw-bold mb-4">La opinión que más importa</h2>
+        <div class="row g-4">
+          <div class="col-12 col-lg-4">
+            <figure class="bg-body-tertiary rounded p-4 h-100 mb-0">
+              <div class="text-warning">★★★★★</div>
+              <blockquote class="blockquote fs-6 my-3">“Llegó antes de lo esperado y perfectamente empacado. El precio fue el mejor que encontré.”</blockquote>
+              <figcaption>
+                <b class="d-block">Mariana R.</b>
+                <small class="text-secondary">Compra verificada · Laptop</small>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-12 col-lg-4">
+            <figure class="bg-body-tertiary rounded p-4 h-100 mb-0">
+              <div class="text-warning">★★★★★</div>
+              <blockquote class="blockquote fs-6 my-3">“El soporte me ayudó a elegir la TV correcta. Súper fácil comprar y pagar a meses.”</blockquote>
+              <figcaption>
+                <b class="d-block">Carlos M.</b>
+                <small class="text-secondary">Compra verificada · Smart TV</small>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-12 col-lg-4">
+            <figure class="bg-body-tertiary rounded p-4 h-100 mb-0">
+              <div class="text-warning">★★★★★</div>
+              <blockquote class="blockquote fs-6 my-3">“Mis audífonos suenan increíble. Definitivamente volveré a comprar en BestBuy.”</blockquote>
+              <figcaption>
+                <b class="d-block">Sofía G.</b>
+                <small class="text-secondary">Compra verificada · Audio</small>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-bb-dark text-white py-5">
+    <div class="container">
+      <div class="row g-4 pb-4">
+        <div class="col-12 col-md-6 col-lg-4">
+          <a class="navbar-brand fw-bold fs-3 text-white" href="#">BestBuy</a>
+          <p class="mt-3 mb-0">La tecnología que quieres, al precio que esperabas.</p>
+        </div>
+        <div class="col-6 col-lg-2">
+          <b class="d-block mb-2">Compra</b>
+          <a class="d-block link-light link-underline-opacity-0 link-underline-opacity-100-hover mb-1" href="#productos">Ofertas</a>
+          <a class="d-block link-light link-underline-opacity-0 link-underline-opacity-100-hover mb-1" href="#productos">Computación</a>
+          <a class="d-block link-light link-underline-opacity-0 link-underline-opacity-100-hover mb-1" href="#productos">Telefonía</a>
+        </div>
+        <div class="col-6 col-lg-2">
+          <b class="d-block mb-2">Ayuda</b>
+          <a class="d-block link-light link-underline-opacity-0 link-underline-opacity-100-hover mb-1" href="#">Rastrear pedido</a>
+          <a class="d-block link-light link-underline-opacity-0 link-underline-opacity-100-hover mb-1" href="#">Devoluciones</a>
+          <a class="d-block link-light link-underline-opacity-0 link-underline-opacity-100-hover mb-1" href="#">Contacto</a>
+        </div>
+        <div class="col-6 col-lg-2">
+          <b class="d-block mb-2">Conócenos</b>
+          <a class="d-block link-light link-underline-opacity-0 link-underline-opacity-100-hover mb-1" href="#">Nosotros</a>
+          <a class="d-block link-light link-underline-opacity-0 link-underline-opacity-100-hover mb-1" href="#">Sucursales</a>
+          <a class="d-block link-light link-underline-opacity-0 link-underline-opacity-100-hover mb-1" href="#">Trabaja aquí</a>
+        </div>
+      </div>
+      <div class="border-top border-secondary pt-3 small d-flex flex-column flex-sm-row justify-content-between gap-2 text-white-50">
+        <span>2026 BestBuy. Todos los derechos reservados.</span>
+        <span>Privacidad - Términos - Accesibilidad</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
