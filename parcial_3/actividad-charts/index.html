@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ApexCharts vs Chart.js</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    .fila {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+
+    .columna {
+      flex: 1;
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+
+    .columna canvas {
+      max-height: 350px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Comparación de gráficas: ApexCharts vs Chart.js</h1>
+
+  <!-- 1. Barras -->
+  <h2>1. Gráfica de barras - Ventas por trimestre</h2>
+  <div class="fila">
+    <div class="columna">
+      <h3>ApexCharts</h3>
+      <div id="apexBarras"></div>
+    </div>
+    <div class="columna">
+      <h3>Chart.js</h3>
+      <canvas id="chartBarras"></canvas>
+    </div>
+  </div>
+
+  <!-- 2. Líneas -->
+  <h2>2. Gráfica de líneas - Visitas por mes</h2>
+  <div class="fila">
+    <div class="columna">
+      <h3>ApexCharts</h3>
+      <div id="apexLineas"></div>
+    </div>
+    <div class="columna">
+      <h3>Chart.js</h3>
+      <canvas id="chartLineas"></canvas>
+    </div>
+  </div>
+
+  <!-- 3. Área -->
+  <h2>3. Gráfica de área - Ingresos por mes</h2>
+  <div class="fila">
+    <div class="columna">
+      <h3>ApexCharts</h3>
+      <div id="apexArea"></div>
+    </div>
+    <div class="columna">
+      <h3>Chart.js</h3>
+      <canvas id="chartArea"></canvas>
+    </div>
+  </div>
+
+  <!-- 4. Pastel -->
+  <h2>4. Gráfica de pastel - Métodos de pago</h2>
+  <div class="fila">
+    <div class="columna">
+      <h3>ApexCharts</h3>
+      <div id="apexPastel"></div>
+    </div>
+    <div class="columna">
+      <h3>Chart.js</h3>
+      <canvas id="chartPastel"></canvas>
+    </div>
+  </div>
+
+  <!-- 5. Dona -->
+  <h2>5. Gráfica de dona - Ventas por categoría</h2>
+  <div class="fila">
+    <div class="columna">
+      <h3>ApexCharts</h3>
+      <div id="apexDona"></div>
+    </div>
+    <div class="columna">
+      <h3>Chart.js</h3>
+      <canvas id="chartDona"></canvas>
+    </div>
+  </div>
+
+  <!-- 6. Radar -->
+  <h2>6. Gráfica de radar - Evaluación de productos</h2>
+  <div class="fila">
+    <div class="columna">
+      <h3>ApexCharts</h3>
+      <div id="apexRadar"></div>
+    </div>
+    <div class="columna">
+      <h3>Chart.js</h3>
+      <canvas id="chartRadar"></canvas>
+    </div>
+  </div>
+
+  <script>
+    // ==================== 1. BARRAS ====================
+    new ApexCharts(document.querySelector('#apexBarras'), {
+      chart: { type: 'bar', height: 350 },
+      series: [
+        { name: 'Laptops', data: [120, 135, 150, 180] },
+        { name: 'Teléfonos', data: [200, 190, 230, 260] }
+      ],
+      xaxis: { categories: ['T1', 'T2', 'T3', 'T4'] }
+    }).render();
+
+    new Chart(document.getElementById('chartBarras'), {
+      type: 'bar',
+      data: {
+        labels: ['T1', 'T2', 'T3', 'T4'],
+        datasets: [
+          { label: 'Laptops', data: [120, 135, 150, 180] },
+          { label: 'Teléfonos', data: [200, 190, 230, 260] }
+        ]
+      }
+    });
+
+    // ==================== 2. LÍNEAS ====================
+    new ApexCharts(document.querySelector('#apexLineas'), {
+      chart: { type: 'line', height: 350 },
+      series: [
+        { name: '2025', data: [12, 14, 13, 16, 18, 21] },
+        { name: '2026', data: [15, 17, 18, 20, 22, 25] }
+      ],
+      xaxis: { categories: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun'] }
+    }).render();
+
+    new Chart(document.getElementById('chartLineas'), {
+      type: 'line',
+      data: {
+        labels: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun'],
+        datasets: [
+          { label: '2025', data: [12, 14, 13, 16, 18, 21] },
+          { label: '2026', data: [15, 17, 18, 20, 22, 25] }
+        ]
+      }
+    });
+
+    // ==================== 3. ÁREA ====================
+    new ApexCharts(document.querySelector('#apexArea'), {
+      chart: { type: 'area', height: 350 },
+      series: [
+        { name: 'Ingresos', data: [40, 42, 38, 45, 47, 50] }
+      ],
+      xaxis: { categories: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun'] }
+    }).render();
+
+    new Chart(document.getElementById('chartArea'), {
+      type: 'line',
+      data: {
+        labels: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun'],
+        datasets: [
+          { label: 'Ingresos', data: [40, 42, 38, 45, 47, 50], fill: true }
+        ]
+      }
+    });
+
+    // ==================== 4. PASTEL ====================
+    new ApexCharts(document.querySelector('#apexPastel'), {
+      chart: { type: 'pie', height: 350 },
+      series: [48, 27, 18, 7],
+      labels: ['Tarjeta', 'Transferencia', 'Efectivo', 'Otros']
+    }).render();
+
+    new Chart(document.getElementById('chartPastel'), {
+      type: 'pie',
+      data: {
+        labels: ['Tarjeta', 'Transferencia', 'Efectivo', 'Otros'],
+        datasets: [
+          { data: [48, 27, 18, 7] }
+        ]
+      }
+    });
+
+    // ==================== 5. DONA ====================
+    new ApexCharts(document.querySelector('#apexDona'), {
+      chart: { type: 'donut', height: 350 },
+      series: [35, 25, 20, 20],
+      labels: ['Electrónica', 'Ropa', 'Hogar', 'Deportes']
+    }).render();
+
+    new Chart(document.getElementById('chartDona'), {
+      type: 'doughnut',
+      data: {
+        labels: ['Electrónica', 'Ropa', 'Hogar', 'Deportes'],
+        datasets: [
+          { data: [35, 25, 20, 20] }
+        ]
+      }
+    });
+
+    // ==================== 6. RADAR ====================
+    new ApexCharts(document.querySelector('#apexRadar'), {
+      chart: { type: 'radar', height: 350 },
+      series: [
+        { name: 'Producto A', data: [8, 6, 9, 7, 8] },
+        { name: 'Producto B', data: [7, 9, 7, 8, 6] }
+      ],
+      xaxis: { categories: ['Calidad', 'Precio', 'Diseño', 'Soporte', 'Durabilidad'] }
+    }).render();
+
+    new Chart(document.getElementById('chartRadar'), {
+      type: 'radar',
+      data: {
+        labels: ['Calidad', 'Precio', 'Diseño', 'Soporte', 'Durabilidad'],
+        datasets: [
+          { label: 'Producto A', data: [8, 6, 9, 7, 8] },
+          { label: 'Producto B', data: [7, 9, 7, 8, 6] }
+        ]
+      }
+    });
+  </script>
+
+</body>
+</html>
